@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="headerBar">
+        <h2>Welcome to MomWeather</h2>
+    </div>
+
+    <div class="pageFlex">
+
+        <div class="c1"></div>
+
+        <div class="c2">
+            
+            <div class="cityRibbon1">
+                <div class="city1name">
+                    <h1>Seattle</h1>
+                    <a class="btn btn-primary float-end" href="https://darksky.net/forecast/47.7291,-122.1262/us12/en" role="button">Radar and 10 Day Forecast</a>
+                </div>
+                <div class="city1leftdata">
+                    <div class="city1datapoint">
+                        <p>Temperature:</p>
+                        <p>{{ temp }}°F</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Condition</p>
+                        <p>{{ condition }}</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Humidity</p>
+                        <p>{{ humidity }}%</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Wind Speed:</p>
+                        <p>{{ wind_speed }} mph</p>
+                    </div>
+                </div>
+                <div class="city1rightdata">
+                    <div class="city1weathericon">
+                        <img src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="image broken">
+                    </div>
+                </div>
+            </div>
+            <div class="cityRibbon2">
+                <div class="city1name">
+                    <h1>Denver</h1>
+                    <a class="btn btn-primary float-end" href="https://darksky.net/forecast/39.7348,-104.9942/us12/en" role="button">Radar and 10 Day Forecast</a>
+                </div>
+                <div class="city1leftdata">
+                    <div class="city1datapoint">
+                        <p>Temperature:</p>
+                        <p>{{ temp_denver }}°F</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Condition</p>
+                        <p>{{ condition_denver }}</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Humidity:</p>
+                        <p>{{ humidity_denver }}%</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Wind Speed</p>
+                        <p>{{ wind_speed_denver }} mph</p>
+                    </div>
+                </div>
+                <div class="city1rightdata">
+                    <div class="city1weathericon">
+                        <img src="http://openweathermap.org/img/wn/{{ icon_denver }}@2x.png" alt="image broken">
+                    </div>
+                </div>
+            </div>
+            <div class="cityRibbon3">
+                <div class="city1name">
+                    <h1>Chatham</h1>
+                    <a class="btn btn-primary float-end" href="https://darksky.net/forecast/41.6809,-69.9586/us12/en" role="button">Radar and 10 Day Forecast</a>
+                </div>
+                <div class="city1leftdata">
+                    <div class="city1datapoint">
+                        <p>Temperature:</p>
+                        <p>{{ temp_chatham }}°F</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Condition</p>
+                        <p>{{ condition_chatham }}</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Humidity</p>
+                        <p>{{ humidity_chatham }}%</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Wind Speed</p>
+                        <p>{{ wind_speed_chatham }} mph</p>
+                    </div>
+                </div>
+                <div class="city1rightdata">
+                    <div class="city1weathericon">
+                        <img src="http://openweathermap.org/img/wn/{{ icon_chatham }}@2x.png" alt="image broken">
+                    </div>
+                </div>
+            </div>
+            <div class="cityRibbon4">
+                <div class="city1name">
+                    <h1>Sisters</h1>
+                    <a class="btn btn-primary float-end" href="https://darksky.net/forecast/44.2913,-121.544/us12/en" role="button">Radar and 10 Day Forecast</a>
+                </div>
+                <div class="city1leftdata">
+                    <div class="city1datapoint">
+                        <p>Temperature:</p>
+                        <p>{{ temp_sisters }}°F</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Condition</p>
+                        <p>{{ condition_sisters }}</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Humidity</p>
+                        <p>{{ humidity_sisters }}%</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Wind Speed</p>
+                        <p>{{ wind_speed_sisters }} mph</p>
+                    </div>
+                </div>
+                <div class="city1rightdata">
+                    <div class="city1weathericon">
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="image broken">
+                    </div>
+                </div>
+            </div>
+            <div class="cityRibbon5">
+                <div class="city1name">
+                    <h1>Nanaimo</h1>
+                    <a class="btn btn-primary float-end" href="https://darksky.net/forecast/49.1638,-123.938/us12/en" role="button">Radar and 10 Day Forecast</a>
+                </div>
+                <div class="city1leftdata">
+                    <div class="city1datapoint">
+                        <p>Temperature:</p>
+                        <p>{{ temp_nanaimo }}°F</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Condition</p>
+                        <p>{{ condition_nanaimo }}</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Humidity</p>
+                        <p>{{ humidity_nanaimo }}%</p>
+                    </div>
+                    <div class="city1datapoint">
+                        <p>Wind Speed</p>
+                        <p>{{ wind_speed_nanaimo }} mph</p>
+                    </div>
+                </div>
+                <div class="city1rightdata">
+                    <div class="city1weathericon">
+                        <img src="http://openweathermap.org/img/wn/{{ icon_nanaimo }}@2x.png" alt="image broken">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="c3"></div>
+    </div>
+
+    <div class="footerBar">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
